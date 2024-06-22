@@ -1,0 +1,60 @@
+<section id="sobre">
+ <img src="/assets/produtivity.png" alt="imagem com um homem de frente para um quadro escrito produtividade"/>
+ <div class="content">
+   <h2>
+      Aumente a sua produtividade com o melhor 
+      sistema de gestão.
+    </h2>
+    <p>
+      Transforme a operação do seu restaurante com nossas soluções tecnológicas avançadas! Na New Software, desenvolvemos softwares que simplificam e otimizam a gestão de estabelecimentos de alimentação, permitindo que você se concentre no que realmente importa: proporcionar uma experiência excepcional para seus clientes.
+    </p>
+   </div>
+ </section>
+<style>
+  section {
+    margin-top: 5rem;
+  }
+  .content {
+    padding: 0 0.75rem
+  }
+
+  img {
+    width: 100%;
+    animation: 1.2s fade;
+    transform-origin: top;
+  }
+
+  h2 {
+      text-align: center;
+      opacity: 0;
+      font-size: 2rem;
+      max-width: 42rem;
+      margin: 1rem auto;
+      animation: 1s fade forwards;
+      animation-delay: 500ms;
+    }
+
+  p {
+    text-align: justify;
+    font-weight: 500;
+    opacity: 0;
+    animation: 1s fade forwards;
+    animation-delay: 300ms;
+  }
+
+  @media (max-width: 600px) {
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>

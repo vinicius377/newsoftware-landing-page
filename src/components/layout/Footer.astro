@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<footer>
+  <div class="content">
+    <div class="item">
+      <span>@newsoftwere</span>
+      <a href="https://www.instagram.com/newsoftwere/">
+        <Icon aria-label="Link para o instagram" name="mdi:instagram"/>
+      </a>
+    </div>
+    <div class="item">
+      <a href="https://api.whatsapp.com/send?phone=558892647889&text=Quero%20tirar%20uma%20d%C3%BAvida." target="_blank">
+        <Icon aria-label="Link para o whatsapp" name="mdi:whatsapp"/>
+      </a>
+      <span>(88) 99999-9999</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: #27263C;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+  .content {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .item {
+
+    span {
+      font-style:italic;
+      font-weight: 300;
+    }
+
+    [data-icon] {
+      font-size: 1.75rem;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .item span {
+        display: none;
+    } 
+
+  }
+</style>

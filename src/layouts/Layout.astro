@@ -1,0 +1,38 @@
+---
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>NewSoftware</title>
+	</head>
+	<body>
+    <Header /> 
+		<slot />
+    <Footer />
+	</body>
+</html>
+<style is:global>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+  }
+	html {
+		font-family: 'Roboto', sans-serif;
+		background: #1B1B27;
+    scroll-behavior: smooth;
+	}
+
+</style>

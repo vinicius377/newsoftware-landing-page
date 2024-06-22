@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Solutions from '../components/pages/home/Solutions.astro'
+import About from '../components/pages/home/About.astro'
+import Reasons from '../components/pages/home/Reasons.astro'
+import Form from '../components/pages/home/Form'
+---
+
+<Layout>
+  <main class="content">
+    <About />
+    <Solutions />
+    <Reasons />
+    <Form client:load/>
+  </main>
+</Layout>
+
+<style>
+  .content {
+    margin: auto;
+    margin-top: 1rem;
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    .content {
+      margin-top: 0;
+    }
+  }
+</style>
