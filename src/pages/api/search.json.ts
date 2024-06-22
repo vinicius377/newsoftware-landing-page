@@ -13,8 +13,8 @@ export const POST: APIRoute = async ({ request  }) => {
         type: data.type,
         value: Number(data.value)
       }
-      const { error  } = await supabase.from('pesquisa').insert(data);
-      throw error
+      const { error } = await supabase.from('pesquisa').insert(data);
+      if (error) throw error
     }
     const response = JSON.stringify({
       message: 'sucess',

@@ -1,33 +1,33 @@
  <section class="solutions" id="solucoes">
     <div id="solutions_desktop" class="solutions_box">
       <div class="padding">
-         <h3>Software de caixa</h2>      
-        <ul>
-          <li><span><strong>Gestão de Vendas :</strong> Controle todas as transações de vendas em tempo real, com relatórios detalhados que auxiliam na tomada de decisões estratégicas.</span></li>
-          <li><span><strong>Relatórios e Análises :</strong> Geração de relatórios financeiros completos, facilitando a análise de desempenho e a gestão de fluxo de caixa.</span></li>
-          <li><span><strong>Segurança e Confiabilidade : </strong>Garantimos a segurança dos dados de seus clientes e das transações com criptografia avançada.</span></li>
-          <li><span><strong>Pedidos no Balcão: </strong>Agilize o atendimento aos clientes que fazem pedidos diretamente no balcão</span></li>
-          <li><span><strong>Pedidos para Delivery :</strong> Registre informações fornecidas do pedido, incluindo endereço de entrega e preferências do cliente.</span></li>
+         <h3 tabindex="0">Software de caixa</h2>      
+        <ul tabindex="0" role="list">
+          <li tabindex="0" tabindex="0"role="listitem"><span><strong>Gestão de Vendas :</strong> Controle todas as transações de vendas em tempo real, com relatórios detalhados que auxiliam na tomada de decisões estratégicas.</span></li>
+          <li tabindex="0" role="listitem"><span><strong>Relatórios e Análises :</strong> Geração de relatórios financeiros completos, facilitando a análise de desempenho e a gestão de fluxo de caixa.</span></li>
+          <li tabindex="0" role="listitem"><span><strong>Segurança e Confiabilidade : </strong>Garantimos a segurança dos dados de seus clientes e das transações com criptografia avançada.</span></li>
+          <li tabindex="0" role="listitem"><span><strong>Pedidos no Balcão: </strong>Agilize o atendimento aos clientes que fazem pedidos diretamente no balcão</span></li>
+          <li tabindex="0" role="listitem"><span><strong>Pedidos para Delivery :</strong> Registre informações fornecidas do pedido, incluindo endereço de entrega e preferências do cliente.</span></li>
         </ul>
       </div>
       <div class="desktop_wrapper">
         <div class="desktop_print">
-          <img src="/assets/desktop_frente.jpeg" alt="print do aplicativo desktop" class="desktop_print">
+          <img tabindex="0" src="/assets/desktop_frente.jpeg" alt="print do aplicativo desktop" class="desktop_print">
         </div>
       </div>
     </div>
 
     <div class="mobile_box solutions_box" id="solutions_mobile">
       <aside>
-        <h3>Aplicativos para Garçom</h2>
-        <ul>
-           <li><span><strong>Pedidos Rápidos e Precisos :</strong> Os garços podem anotar pedidos diretamente no aplicativo, que são enviados imediatamente para a cozinha e o bar, diminuindo erros e temp’os de espera.</span></li>
-           <li><span><strong>Gestão de Mesas :</strong> Visualize o status de todas as mesas em tempo real, facilitando a organização do salão e a alocação de clientes.</span></li>
-           <li><span><strong>Comunicação Eficiente :</strong> Melhore a comunicação entre a equipe de atendimento e a cozinha, garantindo que os pedidos sejam preparados e servidos com rapidez e precisão.</span></li>
+        <h3 tabindex="0">Aplicativos para Garçom</h2>
+        <ul tabindex="0" role="list">
+           <li tabindex="0" role="listitem"><span><strong>Pedidos Rápidos e Precisos :</strong> Os garços podem anotar pedidos diretamente no aplicativo, que são enviados imediatamente para a cozinha e o bar, diminuindo erros e temp’os de espera.</span></li>
+           <li tabindex="0" role="listitem"><span><strong>Gestão de Mesas :</strong> Visualize o status de todas as mesas em tempo real, facilitando a organização do salão e a alocação de clientes.</span></li>
+           <li tabindex="0" role="listitem"><span><strong>Comunicação Eficiente :</strong> Melhore a comunicação entre a equipe de atendimento e a cozinha, garantindo que os pedidos sejam preparados e servidos com rapidez e precisão.</span></li>
         </ul>
       </aside>
       <div class="mobile_print" >
-        <img src="/assets/mobile_mesas.png" alt="print do aplicativo mobile para garçons">
+        <img tabindex="0" src="/assets/mobile_mesas.png" alt="print do aplicativo mobile para garçons">
       </div>
     </div>
 </section>
@@ -42,8 +42,6 @@
     const height = window.innerHeight;
     
     if (!boundingDesktop || !boundingMobile) return;
-
-    
     
     if (boundingDesktop?.top < height) {
       sectionDesktop?.classList.add('active')
@@ -82,7 +80,7 @@
       height: 29rem;
       overflow: hidden;
       box-shadow: 0 0 3px 0px #fff, 4px 4px 4px 0 rgba(0,0,0,0.5);
-      transform: translateY(-100%);
+      transform: translateY(-130%) rotate(30deg);
 
       img {
         object-fit: cover;
@@ -194,11 +192,11 @@
 
   @keyframes desktopFade {
     from {
-      transform: translateY(-100%)
+      transform: translateY(-130%) rotate(30deg);
     }
 
     to {
-      transform: translateY(0)
+      transform: translateY(0) rotate(0);
     }
   }
 

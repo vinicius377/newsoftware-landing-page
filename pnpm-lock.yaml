@@ -17,6 +17,9 @@ importers:
       '@astrojs/vercel':
         specifier: ^7.7.1
         version: 7.7.1(astro@4.11.0(@types/node@20.14.7)(sass@1.77.6)(typescript@5.5.2))(react@18.3.1)
+      '@hookform/resolvers':
+        specifier: ^3.6.0
+        version: 3.6.0(react-hook-form@7.52.0(react@18.3.1))
       '@iconify-json/mdi':
         specifier: ^1.1.67
         version: 1.1.67
@@ -53,6 +56,9 @@ importers:
       typescript:
         specifier: ^5.5.2
         version: 5.5.2
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
     devDependencies:
       sass:
         specifier: ^1.77.6
@@ -399,6 +405,11 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@hookform/resolvers@3.6.0':
+    resolution: {integrity: sha512-UBcpyOX3+RR+dNnqBd0lchXpoL8p4xC21XP8H6Meb8uve5Br1GCnmg0PcBoKKqPKgGu9GHQ/oygcmPrQhetwqw==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
 
   '@iconify-json/mdi@1.1.67':
     resolution: {integrity: sha512-00nllHES8hyACwIfgySlQgAE6MKgpr2wsKfpifMiZWZ9aXC5l4Jb0lR3lJSWwXgOW6kzAOdzC3T+2VOfBBZ13A==}
@@ -2878,6 +2889,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@hookform/resolvers@3.6.0(react-hook-form@7.52.0(react@18.3.1))':
+    dependencies:
+      react-hook-form: 7.52.0(react@18.3.1)
 
   '@iconify-json/mdi@1.1.67':
     dependencies:
