@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import type { RegisterOptions, UseFormRegister } from "react-hook-form";
+import type { UseFormRegister } from "react-hook-form";
 
 interface TextFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
   title: string;
